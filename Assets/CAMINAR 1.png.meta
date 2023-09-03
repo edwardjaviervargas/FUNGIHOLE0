@@ -1,0 +1,452 @@
+fileFormatVersion: 2
+guid: 65f50f72a8b43a040944ca35e4c4eb2b
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: CAMINAR 1_1
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 826
+        width: 119
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9534a594f58f0a24c893d852058f71fb
+      internalID: -1389532202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CAMINAR 1_4
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 826
+        width: 115
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29b6012f89c77b64597a06d2199b628c
+      internalID: -1296716478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CAMINAR 1_7
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 824
+        width: 117
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 787be72c96ed7814f89f4ea24ebf8cd1
+      internalID: -164612571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CAMINAR 1_10
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 827
+        width: 118
+        height: 145
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01b04eb59f5d3e34e8c131fcddac9043
+      internalID: 1091366914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CAMINAR 1_21
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 681
+        width: 118
+        height: 138
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68ad6b405839b8c449a864f546282545
+      internalID: -693832197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CAMINAR 1_24
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 680
+        width: 116
+        height: 139
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61aa63ece2522c1428e34f15bcb15a3c
+      internalID: -1110542463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CAMINAR 1_27
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 678
+        width: 117
+        height: 141
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b3cd03cc6a17354985a7372cfee7676
+      internalID: -19909113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CAMINAR 1_30
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 679
+        width: 124
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 530165e2f64106b43864aa052dbb3a3f
+      internalID: 964484051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CAMINAR 1_41
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 533
+        width: 123
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9c72cb6c32048145bda40ec320e25d1
+      internalID: -1244172060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CAMINAR 1_44
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 530
+        width: 122
+        height: 145
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 636c6b5b9793d8e4f920b9f9318cdfd4
+      internalID: -1417800665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CAMINAR 1_48
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 528
+        width: 122
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78db2e2afc3af5c4a87439845f11cd8f
+      internalID: -371105981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CAMINAR 1_51
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 527
+        width: 123
+        height: 143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dae20547b0cb7674a8b6d462c26b9569
+      internalID: -1818596420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      CAMINAR 1_0: -2081698399
+      CAMINAR 1_1: -1389532202
+      CAMINAR 1_10: 1091366914
+      CAMINAR 1_11: 474386421
+      CAMINAR 1_12: 597721523
+      CAMINAR 1_13: -958174703
+      CAMINAR 1_14: -1702624959
+      CAMINAR 1_15: 1604501727
+      CAMINAR 1_16: 1711946643
+      CAMINAR 1_17: -985050912
+      CAMINAR 1_18: -2131367022
+      CAMINAR 1_19: -822561559
+      CAMINAR 1_2: 483567674
+      CAMINAR 1_20: 798675731
+      CAMINAR 1_21: -693832197
+      CAMINAR 1_22: -1489251612
+      CAMINAR 1_23: 1658921269
+      CAMINAR 1_24: -1110542463
+      CAMINAR 1_25: -1184820620
+      CAMINAR 1_26: -1802638760
+      CAMINAR 1_27: -19909113
+      CAMINAR 1_28: -1697897593
+      CAMINAR 1_29: 1699407327
+      CAMINAR 1_3: -748527819
+      CAMINAR 1_30: 964484051
+      CAMINAR 1_31: 1319395823
+      CAMINAR 1_32: -754197043
+      CAMINAR 1_33: 455068345
+      CAMINAR 1_34: -171479482
+      CAMINAR 1_35: -1909364966
+      CAMINAR 1_36: 1201399888
+      CAMINAR 1_37: -172567575
+      CAMINAR 1_38: -1385115472
+      CAMINAR 1_39: -961698516
+      CAMINAR 1_4: -1296716478
+      CAMINAR 1_40: 649330393
+      CAMINAR 1_41: -1244172060
+      CAMINAR 1_42: -1951554734
+      CAMINAR 1_43: 1455252792
+      CAMINAR 1_44: -1417800665
+      CAMINAR 1_45: 1071977827
+      CAMINAR 1_46: -33718124
+      CAMINAR 1_47: -9926216
+      CAMINAR 1_48: -371105981
+      CAMINAR 1_49: 276954917
+      CAMINAR 1_5: 1120062096
+      CAMINAR 1_50: -118206551
+      CAMINAR 1_51: -1818596420
+      CAMINAR 1_52: 1990779539
+      CAMINAR 1_53: 236149562
+      CAMINAR 1_54: 695682013
+      CAMINAR 1_55: -353168300
+      CAMINAR 1_56: 847860979
+      CAMINAR 1_57: -2008753004
+      CAMINAR 1_58: 423310363
+      CAMINAR 1_59: 1820679753
+      CAMINAR 1_6: -340949220
+      CAMINAR 1_7: -164612571
+      CAMINAR 1_8: -99281228
+      CAMINAR 1_9: -421305931
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
