@@ -1080,7 +1080,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7945872651072215065, guid: 1518ed99aea83f9409e847d77fd7488b, type: 3}
       propertyPath: m_Name
-      value: PLATAFORMA 3 (1)
+      value: plataforma movil
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1345,6 +1345,7 @@ MonoBehaviour:
   controladorSuelo: {fileID: 1822319498}
   dimensionesCaja: {x: 2, y: 0.25, z: 0}
   enSUelo: 0
+  velocidadRebote: 0
 --- !u!212 &689678610
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5229,6 +5230,7 @@ GameObject:
   - component: {fileID: 1533792947}
   - component: {fileID: 1533792949}
   - component: {fileID: 1533792948}
+  - component: {fileID: 1533792950}
   m_Layer: 0
   m_Name: serpiente _2_0
   m_TagString: Untagged
@@ -5413,6 +5415,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.8302758, y: 0.90666664}
   m_EdgeRadius: 0
+--- !u!114 &1533792950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1533792943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 635fe135aa42f284aae054cc68916e2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1593122151
 GameObject:
   m_ObjectHideFlags: 0

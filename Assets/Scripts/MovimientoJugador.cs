@@ -37,6 +37,11 @@ public class MovimientoJugador : MonoBehaviour
 
     [Header("Animacion")]
 
+    [Header("Rebote")]
+
+    [SerializeField] private float velocidadRebote;
+
+
     private Animator animator;
 
 
@@ -103,6 +108,15 @@ public class MovimientoJugador : MonoBehaviour
 
         
     }
+    private void Rebote()
+    {
+        rb2D.velocity = new Vector2(rb2D.velocity.x, velocidadRebote);
+
+        Rebote();
+
+    }
+    
+
     private void Girar()
     {
         mirandoDerecha = !mirandoDerecha;
