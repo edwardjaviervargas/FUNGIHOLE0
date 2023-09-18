@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class MovimientoJugador : MonoBehaviour
 {
+   
+    float xInicial, yInicial;
+    
     private Rigidbody2D rb2D;
 
     [Header("Movimiento")]
@@ -34,6 +37,11 @@ public class MovimientoJugador : MonoBehaviour
 
     [Header("Animacion")]
 
+    [Header("Rebote")]
+
+    [SerializeField] private float velocidadRebote;
+
+
     private Animator animator;
 
 
@@ -42,6 +50,11 @@ public class MovimientoJugador : MonoBehaviour
     {
         rb2D = GetComponent<Rigidbody2D>();
         animator=GetComponent<Animator>();
+
+        xInicial = transform.position.x;
+        yInicial = transform.position.y;
+
+
 
     }
 
@@ -95,6 +108,15 @@ public class MovimientoJugador : MonoBehaviour
 
         
     }
+    private void Rebote()
+    {
+        rb2D.velocity = new Vector2(rb2D.velocity.x, velocidadRebote);
+
+        Rebote();
+
+    }
+    
+
     private void Girar()
     {
         mirandoDerecha = !mirandoDerecha;
@@ -106,5 +128,9 @@ public class MovimientoJugador : MonoBehaviour
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireCube(controladorSuelo.position, dimensionesCaja);
 
+    }
+    public void Recolocar()
+    {
+        transform.position = new Vector3(xInicial, yInicial, 0);
     }
 }
