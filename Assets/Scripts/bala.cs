@@ -14,11 +14,19 @@ public class bala : MonoBehaviour
         transform.Translate(Vector2.right * velocidad * Time.deltaTime);
         
     }
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Enemigo"))
+        {
+            other.GetComponent<Enemigo>().TomarDaño(daño);
+            Destroy(gameObject);
+        }
+    }
 
-    
 
-        
-   
+
+
+
 
 
 
