@@ -9,9 +9,19 @@ public class Boss : MonoBehaviour
     public Transform jugador;
     private bool mirandoDerecha = true;
 
+    public GameObject proyectilPrefab;
+    public float tiempoDisparo = 2.0f;
+    public float rangoDeDeteccion = 5.0f;
+    private float tiempoUltimoDisp;
+    private Transform _firePoint;
+    public GameObject shooter;
+
+
     [Header("Vida")]
-    [SerializeField] private float vida;
-    //[SerializeField] private BarraDeVida barraDeVida;
+    [SerializeField] private float life;
+    [SerializeField] private float lifeMax;
+    [SerializeField] private barraVida barraDeVidaa;
+
 
     [SerializeField] private Transform controladorAtaque;
     [SerializeField] private float radioAtaque;
@@ -21,25 +31,71 @@ public class Boss : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
+        life = lifeMax;
         animator = GetComponent<Animator>();
         rib2D = GetComponent<Rigidbody2D>();
-        // barraDeVida.InicializarBarraDeVida(vida);
-        jugador = GameObject.FindGameObjectWithTag("player").GetComponent<Transform>();
+        barraDeVidaa.IniciarVida(life);
+        jugador = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+
+        tiempoUltimoDisp = Time.time;
+
+    }
+    public void Awake()
+    {
+        _firePoint = transform.Find("firePoint");
 
     }
     private void Update()
     {
         float distanciaJugador = Vector2.Distance(transform.position, jugador.position);
         animator.SetFloat("distanciaJugador", distanciaJugador);
+
+        float distanciaAlJugaor = Vector2.Distance(transform.position, jugador.position);
+
+        if (distanciaAlJugaor <= rangoDeDeteccion)
+        {
+            if (Time.time - tiempoUltimoDisp >= tiempoDisparo)
+            {
+                Disparar();
+                tiempoUltimoDisp = Time.time;
+            }
+        }
+
+    }
+
+    void Disparar() 
+    {
+    
+       // Instantiate(proyectilPrefab, transform.position, Quaternion.identity);
+
+        //Instantiate(proyectilPrefab, _firePoint.transform.position, Quaternion.identity);
+
+
+        if (proyectilPrefab != null && _firePoint != null && shooter != null)
+        {
+            GameObject myBullet = Instantiate(proyectilPrefab, _firePoint.position, Quaternion.identity) as GameObject;
+            bullet bulletComponente = myBullet.GetComponent<bullet>();
+
+            if (shooter.transform.localScale.x < 0f)
+            {
+                bulletComponente.direction = Vector2.left;
+            }
+            else
+            {
+                bulletComponente.direction = Vector2.right;
+            }
+
+
+        }
     }
 
     // Update is called once per frame
-    public void TomarDaño(float daño)
+    public void TomarDaño(float dañoB)
     {
-        vida -= daño;
-        // barraDeVida.CambiarVidaActual(vida);
+        life -= dañoB;
+        barraDeVidaa.changeLifeAc(life);
 
-        if (vida <= 0)
+        if (life <= 0)
         {
             animator.SetTrigger("Muerte");
         }

@@ -154,7 +154,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   controladorSuelo: {fileID: 1926695865172711835}
-  dimensionesCaja: {x: 2, y: 0.25, z: 0}
+  dimensionesCaja: {x: 1.84, y: 0.19, z: -0.03}
   enSUelo: 0
   velocidadRebote: 0
 --- !u!212 &1954701052645956889
@@ -237,7 +237,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vida: 100
   maximoVida: 100
-  barraDeVida: {fileID: 0}
+  barraDeVida: {fileID: 7778387434772925407, guid: d8758dec8da33514689ee6bb6dd61ed9, type: 3}
 --- !u!1 &1544883768816902586
 GameObject:
   m_ObjectHideFlags: 0

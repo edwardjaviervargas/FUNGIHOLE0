@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class CombateJugador : MonoBehaviour
 {
-    [SerializeField] int vida;
-    [SerializeField] int maximoVida;
+    [SerializeField] float vida;
+    [SerializeField] float maximoVida;
     [SerializeField] private BarraDeVida barraDeVida;
     float xInicial, yInicial;
 
@@ -21,9 +21,9 @@ public class CombateJugador : MonoBehaviour
     }
 
     // Update is called once per frame
-    public void TomarDaño(int daño)
+    public void TomarDaño(float damage)
     {
-        vida -= daño;
+        vida -= damage;
         barraDeVida.CambiarVidaActual(vida);
         if (vida <= 0)
         {

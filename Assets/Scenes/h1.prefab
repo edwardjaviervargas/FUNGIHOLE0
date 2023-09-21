@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &5766458561463030549
+--- !u!1 &5522994270101844147
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,21 +8,21 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5450864930426831202}
+  - component: {fileID: 1097873492589080411}
   m_Layer: 0
-  m_Name: controlAbility
+  m_Name: controlator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5450864930426831202
+--- !u!4 &1097873492589080411
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5766458561463030549}
+  m_GameObject: {fileID: 5522994270101844147}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 7686320228732545438}
   - component: {fileID: 8927633849961527314}
   - component: {fileID: 2878405000878667552}
-  - component: {fileID: 6646720440720077755}
+  - component: {fileID: 5972772255582380732}
   m_Layer: 0
   m_Name: h1
   m_TagString: Untagged
@@ -63,7 +63,7 @@ Transform:
   m_LocalScale: {x: 3.1022, y: 3.1022, z: 3.1022}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 5450864930426831202}
+  - {fileID: 1097873492589080411}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8927633849961527314
@@ -139,7 +139,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &6646720440720077755
+--- !u!114 &5972772255582380732
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -148,10 +148,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 6449636317586821273}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fbd6f9bd757c504ea4a519f37a70a03, type: 3}
+  m_Script: {fileID: 11500000, guid: a1c40ae011bc25d4793509fe9db1507f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  "da\xF1o": 1
-  dimesionesCaja: {x: 1.17, y: 1.21}
-  posicionCaja: {fileID: 5450864930426831202}
-  tiempoDeVida: 0
+  speed: 2
+  direction: {x: 1, y: 1}
+  livingTime: 3
+  damage: 5
+  controlshoot: {fileID: 1097873492589080411}
+  smash: 0.47

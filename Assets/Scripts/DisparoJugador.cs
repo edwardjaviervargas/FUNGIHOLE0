@@ -8,6 +8,11 @@ public class DisparoJugador : MonoBehaviour
 
     [SerializeField] private GameObject bala;
 
+
+    //[SerializeField] private float radioGolpe;
+
+   // [SerializeField] private float dañoB;
+
     private void Update()
     {
         if (Input.GetButtonDown("Fire1"))
@@ -21,5 +26,11 @@ public class DisparoJugador : MonoBehaviour
     private void Disparar()
     {
         Instantiate(bala, controladorDisparo.position, controladorDisparo.rotation);
+
+
+
+
+
     }
+    
 }
