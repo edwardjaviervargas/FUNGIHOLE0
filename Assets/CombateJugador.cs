@@ -10,6 +10,8 @@ public class CombateJugador : MonoBehaviour
     [SerializeField] int maximoVida;
     [SerializeField] private BarraDeVida barraDeVida;
     float xInicial, yInicial;
+    [SerializeField] private int vidaMaxima;
+
 
     private Animator animator;
 

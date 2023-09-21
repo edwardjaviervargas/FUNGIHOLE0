@@ -4,12 +4,15 @@ using UnityEngine;
 using UnityEngine.UI;
 public class BarraDeVida : MonoBehaviour
 {
-    private Slider slider;
+    [SerializeField]private  Slider slider;
+
+
+
     // Start is called before the first frame update
     private void Start()
 
     {
-        slider = GetComponent<Slider>();
+        //slider = GetComponent<Slider>();
     }
 
     // Update is called once per frame
@@ -22,11 +25,10 @@ public class BarraDeVida : MonoBehaviour
     {
         slider.value = cantidadVida;
     }
-    public void InicializarBarraDeVida(float cantidadVida)
+   public void InicializarBarraDeVida(float cantidadVida)
     {
         CambiarVidaMaxima(cantidadVida);
         CambiarVidaActual(cantidadVida);
         
 
-    }
-}
+    }}
