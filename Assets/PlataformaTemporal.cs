@@ -15,6 +15,11 @@ public class PlataformaTemporal : MonoBehaviour
 
     private bool caida = false;
 
+    public PlataformaTemporal(bool caida)
+    {
+        this.caida = caida;
+    }
+
     private void Start()
     {
         rb2D = GetComponent<Rigidbody2D>();
