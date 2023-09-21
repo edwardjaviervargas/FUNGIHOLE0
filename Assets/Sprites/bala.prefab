@@ -170,7 +170,7 @@ MonoBehaviour:
   velocidad: 7
   "da\xF1oB": 5
   controladorDisparo: {fileID: 8680257729809131541}
-  radioGolpe: 0.14
+  radioGolpe: 0.35
 --- !u!114 &5040819391164016631
 MonoBehaviour:
   m_ObjectHideFlags: 0

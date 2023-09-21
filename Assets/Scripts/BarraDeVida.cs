@@ -16,16 +16,16 @@ public class BarraDeVida : MonoBehaviour
     }
 
     // Update is called once per frame
-    public void CambiarVidaMaxima(float vidaMaxima)
+    public void CambiarVidaMaxima(int vidaMaxima)
     {
         slider.maxValue = vidaMaxima;
 
     }
-    public void CambiarVidaActual(float cantidadVida)
+    public void CambiarVidaActual(int cantidadVida)
     {
         slider.value = cantidadVida;
     }
-   public void InicializarBarraDeVida(float cantidadVida)
+   public void InicializarBarraDeVida(int cantidadVida)
     {
         CambiarVidaMaxima(cantidadVida);
         CambiarVidaActual(cantidadVida);
