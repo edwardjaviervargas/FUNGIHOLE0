@@ -8,6 +8,8 @@ public class DisparoJugador : MonoBehaviour
 
     [SerializeField] private GameObject bala;
 
+    [SerializeField] private AudioSource sonidoDisparo;
+
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.K))
@@ -21,5 +23,7 @@ public class DisparoJugador : MonoBehaviour
     private void Disparar()
     {
         Instantiate(bala, controladorDisparo.position, controladorDisparo.rotation);
+        sonidoDisparo.Play();
+
     }
 }

@@ -33,6 +33,8 @@ public class MovimientoJugador : MonoBehaviour
 
     [SerializeField] private bool enSUelo;
 
+    [SerializeField] private AudioSource saltoSonido;
+
     private bool salto = false;
 
     [Header("Animacion")]
@@ -103,6 +105,7 @@ public class MovimientoJugador : MonoBehaviour
         {
             enSUelo = false;
             rb2D.AddForce(new Vector2(0f, fuerzaDeSalto));
+            saltoSonido.Play();
 
         }
 
