@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class MobilePlatform : MonoBehaviour
-
 {
     public float speed = 2.0f; // Velocidad de movimiento de la plataforma
     public float range = 4.0f; // Distancia máxima que la plataforma se moverá
@@ -26,12 +25,21 @@ public class MobilePlatform : MonoBehaviour
         transform.position = newPosition;
     }
 
-    // Cambia la dirección de movimiento cuando el jugador toca la plataforma
-    //private void OnCollisionEnter2D(Collision2D collision)
-   // {
-       // if (collision.gameObject.CompareTag("Player"))
-       // {
-       //     direction *= -1.0f;
-       // }
-    //}
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            // Convierte al jugador en un hijo de la plataforma
+            collision.transform.parent = transform;
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            // Desvincula al jugador de la plataforma
+            collision.transform.parent = null;
+        }
+    }
 }
