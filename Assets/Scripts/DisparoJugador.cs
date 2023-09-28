@@ -10,7 +10,7 @@ public class DisparoJugador : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetKeyDown(KeyCode.K))
         {
             //disparar
             Disparar();
