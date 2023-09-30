@@ -9,11 +9,11 @@ public class serpiente : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             foreach (ContactPoint2D punto in other.contacts)
-           
+
             {
                 if (punto.normal.y <= -0.9)
                 {
-                 // other.gameObject.GetComponent<MovimientoJugador>()Rebote();
+                    // other.gameObject.GetComponent<MovimientoJugador>()Rebote();
 
 
 
