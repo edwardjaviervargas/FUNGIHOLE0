@@ -13,14 +13,14 @@ public class ColisionInferior : MonoBehaviour
 
     void Update()
     {
-        if (!isGameOver)
-        {
-            // Verifica la posición del jugador en el eje Y
-            if (transform.position.y <= gameOverYPosition)
-            {
-                GameOver();
-            }
-        }
+        //if (!isGameOver)
+        //{
+        //    // Verifica la posición del jugador en el eje Y
+        //    if (transform.position.y <= gameOverYPosition)
+        //    {
+        //        GameOver();
+        //    }
+        //}
     }
 
     void GameOver()

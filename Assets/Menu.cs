@@ -16,7 +16,7 @@ public class Menu : MonoBehaviour
     private void Start()
     {
         combateJugador = GameObject.FindGameObjectWithTag("Player").GetComponent<CombateJugador>();
-        combateJugador.MuerteJugador += AbrirMenu;
+//        combateJugador.MuerteJugador += AbrirMenu;
 
 
     }
