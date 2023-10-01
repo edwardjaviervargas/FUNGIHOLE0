@@ -1,27 +1,34 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
 public class ColisionInferior : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    private bool isGameOver = false;
 
-    // Update is called once per frame
+    // Define la posición y en la que se considera que el jugador ha perdido
+    public float gameOverYPosition = -10f;
+
     void Update()
     {
-        
+        if (!isGameOver)
+        {
+            // Verifica la posición del jugador en el eje Y
+            if (transform.position.y <= gameOverYPosition)
+            {
+                GameOver();
+            }
+        }
     }
-    private void OnTriggerEnter2D(Collider2D other) 
+
+    void GameOver()
     {
-        FindObjectOfType<MovimientoJugador>().SendMessage("Recolocar");
-    
+        isGameOver = true;
+        // Puedes mostrar un mensaje de "Game Over" en la pantalla aquí o realizar otras acciones de fin de juego.
+
+        // Recarga la escena actual para reiniciar el juego.
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
-   
-       
-    
 }

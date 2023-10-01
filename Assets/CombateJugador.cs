@@ -17,6 +17,8 @@ public class CombateJugador : MonoBehaviour
 
     public event EventHandler MuerteJugador;
 
+    private Rigidbody2D rb2D;
+
     
 
 
@@ -28,6 +30,8 @@ public class CombateJugador : MonoBehaviour
         barraDeVida.InicializarBarraDeVida(vida);
         xInicial = transform.position.x;
         yInicial = transform.position.y;
+        rb2D = GetComponent<Rigidbody2D>();
+        
 
     }
 
@@ -43,6 +47,7 @@ public class CombateJugador : MonoBehaviour
         }
         else
         {
+            rb2D.constraints = RigidbodyConstraints2D.FreezeAll;
             animator.SetTrigger("Dead");
             Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Jugador"), LayerMask.NameToLayer("Enemigo"),
                 true);
@@ -51,6 +56,7 @@ public class CombateJugador : MonoBehaviour
 
         if (vida <= 0)
         {
+            MuerteJugador?.Invoke(this, EventArgs.Empty);
             Destroy(gameObject);
         }
     }
@@ -60,7 +66,8 @@ public class CombateJugador : MonoBehaviour
     }
     public void MuerteJugadorEvento()
     {
-        MuerteJugador?.Invoke(this, EventArgs.Empty);
+       // MuerteJugador?.Invoke(this, EventArgs.Empty);
     }
+
 
 }
